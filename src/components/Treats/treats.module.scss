@@ -1,10 +1,39 @@
 @import "../../styles/main.module.scss";
 
 .treats {
-  @include treatsTitle;
-  height: 50vh;
+  padding: $mn 0;
+ 
 
   .treat {
-    width: 100%;
+    padding: $mn;
+    margin: 0 auto;
+
+    h2 {
+      @include treatsTitle;
+      text-align: center;
+      padding-bottom: $sp-xl ;
+    }
+
+    .treatList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: $sp-xxl;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        gap: $sp-m;
+
+        p {
+          @include treatsText;
+        }
+
+      }
+      
+     
+    }
+
   }
 }

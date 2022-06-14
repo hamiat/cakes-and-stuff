@@ -21,7 +21,14 @@
 //Treat 
 @mixin treatsTitle {
   font-family: Rosarivo;
-  font-size: 32px;
+  font-size: 36px;
   color: $secondary;
-  padding: 0 64px ;
+ 
+}
+
+@mixin treatsText {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+
 }
