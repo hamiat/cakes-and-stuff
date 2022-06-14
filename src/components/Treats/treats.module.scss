@@ -30,6 +30,19 @@
           @include treatsText;
         }
 
+
+      }
+
+      .addToCart {
+        display: flex;
+        width: 100px;
+        gap: $sp-s;
+
+        button {
+          font-size: 16px;
+          padding: 2px 8px;
+          background-color: transparent;
+        }
       }
       
      

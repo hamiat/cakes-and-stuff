@@ -8,17 +8,26 @@ export default function Treats() {
       id: 1,
       title: "Pastries",
       bgColor: "#FAF3F3",
-      picOne: "/assets/pink-4.svg",
-      picTwo: "/assets/pink-2.svg",
-      picThree: "/assets/pink-3.svg"
+      picOne: "/assets/pi-1.svg",
+      picTwo: "/assets/pi-2.svg",
+      picThree: "/assets/pi-3.svg"
     },
     {
       id: 2,
       title: "Cupcakes",
       bgColor: "#F6F8F9",
-      picOne: "/assets/pink-1.svg"
+      picOne: "/assets/bu-1.svg",
+      picTwo: "/assets/bu-2.svg",
+      picThree: "/assets/bu-3.svg"
     },
-    { id: 3, title: "Donuts", bgColor: "#F7F7F2", picOne: "/assets/pink-1.svg" }
+    {
+      id: 3,
+      title: "Donuts",
+      bgColor: "#F7F7F2",
+      picOne: "/assets/gr-1.svg",
+      picTwo: "/assets/gr-2.svg",
+      picThree: "/assets/gr-3.svg"
+    }
   ]);
 
   return (
