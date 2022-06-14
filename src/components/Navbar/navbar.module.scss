@@ -1,0 +1,27 @@
+@import "../../styles/main.module.scss";
+
+header {
+  height: 10vh;
+
+  .navBar {
+    display: flex;
+      padding: $sp-m $mn;
+      @include navText;
+  
+    .navList {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+  
+    .cart {
+        width: 10%;
+    }
+  
+  }
+  
+
+}
+
+

@@ -1,0 +1,25 @@
+@import './abstracts/_variables.scss';
+@import './abstracts/_mixins.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: $primary;
+  color: $dark;
+
+}
+
+a {
+  text-decoration: none;
+  color: $secondary;
+}
+
+.App {
+  font-family: Roboto;
+  text-align: center;
+  max-width: 1440px;
+}

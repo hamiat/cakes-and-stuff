@@ -1,0 +1,17 @@
+@import "../../styles/main.module.scss";
+
+.hero {
+  height: 90vh;
+  padding: $sp-xxl 0;
+
+
+  .heroTitle {
+    @include heroTitle;
+  }
+
+  .heroText {
+    @include heroText;
+    padding-top: $sp-m;
+   
+  }
+}

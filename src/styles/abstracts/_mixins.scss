@@ -1,0 +1,19 @@
+//Typography in order of sections
+
+//Nav
+@mixin navText {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+//Hero
+@mixin heroTitle {
+  font-family: Rosarivo;
+  font-size: 64px;
+  color: $secondary;
+}
+@mixin heroText {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+}
