@@ -1,0 +1,10 @@
+@import "../../styles/main.module.scss";
+
+.treats {
+  @include treatsTitle;
+  height: 50vh;
+
+  .treat {
+    width: 100%;
+  }
+}
