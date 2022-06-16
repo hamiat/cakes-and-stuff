@@ -1,3 +1,4 @@
+import CartBtns from "../Cart/CartBtns";
 import style from "./treats.module.scss";
 
 export default function Treat({ title, picOne, picTwo, picThree }) {
@@ -9,6 +10,7 @@ export default function Treat({ title, picOne, picTwo, picThree }) {
           <img src={picOne} alt="Baked goods" />
           <p>Homey carrot cake with cinnamon. </p>
           <div className={style.addToCart}></div>
+          <CartBtns />
         </li>
         <li>
           <img src={picTwo} alt="Baked goods" />
