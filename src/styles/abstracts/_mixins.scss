@@ -3,7 +3,8 @@
 //Nav
 @mixin navText {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 300;
+
 }
 
 //Hero
@@ -31,4 +32,10 @@
   font-weight: 300;
   line-height: 1.5;
 
+}
+
+//Counter 
+@mixin countText {
+  font-family: Rosarivo;
+  font-size: 18px;
 }

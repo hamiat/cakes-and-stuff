@@ -1,7 +1,18 @@
 @import "../../styles/main.module.scss";
 
 header {
-  height: 10vh;
+  height: 8vh;
+  background-color: $secondary;
+  color: $primary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 1px 1px 1px rgb(114, 86, 86);
+
+
+  
+
 
   .navBar {
     display: flex;
@@ -13,6 +24,7 @@ header {
         display: flex;
         justify-content: space-evenly;
         list-style: none;
+        padding: 0 $mn;
     }
   
     .cart {

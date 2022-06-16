@@ -24,11 +24,11 @@
         display: flex;
         flex-direction: column;
         place-items: center;
-        gap: $sp-m;
+        gap: $sp-l;
 
         .treatText {
           @include treatsText;
-          padding-top: $sp-m;
+          padding-top: $sp-l;
         }
 
 
