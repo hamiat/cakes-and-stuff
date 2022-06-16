@@ -14,7 +14,7 @@ export default function Treats() {
     },
     {
       id: 2,
-      title: "Cupcakes",
+      title: "Donuts",
       bgColor: "#F6F8F9",
       picOne: "/assets/bu-1.svg",
       picTwo: "/assets/bu-2.svg",
@@ -22,7 +22,7 @@ export default function Treats() {
     },
     {
       id: 3,
-      title: "Donuts",
+      title: "Cupcakes",
       bgColor: "#F7F7F2",
       picOne: "/assets/gr-1.svg",
       picTwo: "/assets/gr-2.svg",
