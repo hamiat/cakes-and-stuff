@@ -2,7 +2,7 @@ import style from "./cartBtns.module.scss";
 import { useState } from "react";
 
 export default function CartBtns() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const [itemAdded, setItemAdded] = useState(false);
 
   const handleDecrease = () => {

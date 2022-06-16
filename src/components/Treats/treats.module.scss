@@ -26,8 +26,9 @@
         place-items: center;
         gap: $sp-m;
 
-        p {
+        .treatText {
           @include treatsText;
+          padding-top: $sp-m;
         }
 
 
