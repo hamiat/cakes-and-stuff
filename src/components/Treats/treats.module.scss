@@ -8,8 +8,8 @@
     padding: $mn;
     margin: 0 auto;
 
-    h2 {
-      @include treatsTitle;
+    .sectionTitle {
+      @include sectionTitle;
       text-align: center;
       padding-bottom: $sp-xl ;
     }

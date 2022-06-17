@@ -8,8 +8,8 @@
   justify-content: center;
   align-items: center;
 
-  .heroTitle {
-    @include heroTitle;
+  .sectionTitle {
+    @include sectionTitle;
   }
 
   .heroText {

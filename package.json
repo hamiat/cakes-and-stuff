@@ -10,13 +10,12 @@
   "dependencies": {
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-hook-form": "^7.32.1",
     "react-router-dom": "6.3.0",
     "react-scripts": "4.0.0",
     "sass": "1.52.3"
   },
-  "devDependencies": {
-   
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -24,10 +23,9 @@
     "eject": "react-scripts eject"
   },
   "rules": {
- 
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off"
- },
+  },
   "browserslist": [
     ">0.2%",
     "not dead",

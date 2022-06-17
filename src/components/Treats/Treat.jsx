@@ -4,7 +4,7 @@ import style from "./treats.module.scss";
 export default function Treat({ title, picOne, picTwo, picThree }) {
   return (
     <div className={style.treat}>
-      <h2>{title}</h2>
+      <h2 className={style.sectionTitle}>{title}</h2>
       <ul className={style.treatList}>
         <li>
           <img src={picOne.url} alt="Baked goods" />
