@@ -1,0 +1,20 @@
+@import "../../styles/main.module.scss";
+
+.catering {
+  
+  padding: $mn 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .heroTitle {
+    @include heroTitle;
+  }
+
+  .heroText {
+    @include heroText;
+    padding-top: $sp-m;
+   
+  }
+}

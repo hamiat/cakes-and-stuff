@@ -1,3 +1,4 @@
+import Catering from "./components/Catering/Catering";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Treat from "./components/Treats/Treats";
@@ -11,6 +12,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Treat />
+      <Catering />
     </div>
   );
 }

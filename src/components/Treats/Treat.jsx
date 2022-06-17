@@ -7,18 +7,18 @@ export default function Treat({ title, picOne, picTwo, picThree }) {
       <h2>{title}</h2>
       <ul className={style.treatList}>
         <li>
-          <img src={picOne} alt="Baked goods" />
-          <p className={style.treatText}>Homey carrot cake with cinnamon. </p>
+          <img src={picOne.url} alt="Baked goods" />
+          <p className={style.treatText}>{picOne.description} </p>
           <CartBtns />
         </li>
         <li>
-          <img src={picTwo} alt="Baked goods" />
-          <p className={style.treatText}>Homey carrot cake with cinnamon. </p>
+          <img src={picTwo.url} alt="Baked goods" />
+          <p className={style.treatText}>{picTwo.description} </p>
           <CartBtns />
         </li>
         <li>
-          <img src={picThree} alt="Baked goods" />
-          <p className={style.treatText}>Homey carrot cake with cinnamon. </p>
+          <img src={picThree.url} alt="Baked goods" />
+          <p className={style.treatText}>{picThree.description} </p>
           <CartBtns />
         </li>
       </ul>

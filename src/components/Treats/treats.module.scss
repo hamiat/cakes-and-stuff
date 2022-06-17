@@ -1,7 +1,7 @@
 @import "../../styles/main.module.scss";
 
 .treats {
-  padding: $mn 0;
+ padding: $mn 0;
  
 
   .treat {
@@ -25,8 +25,11 @@
         flex-direction: column;
         place-items: center;
         gap: $sp-l;
+        justify-content: space-evenly;
+        width: 30%;
 
         .treatText {
+         
           @include treatsText;
           padding-top: $sp-l;
         }
