@@ -1,7 +1,7 @@
 @import "../../styles/main.module.scss";
 
 header {
-  height: 8vh;
+  height: max-content;
   background-color: $secondary;
   color: $primary;
   position: fixed;
@@ -16,7 +16,7 @@ header {
 
   .navBar {
     display: flex;
-      padding: $sp-m $mn;
+      padding: $sp-s $mn;
       @include navText;
   
     .navList {
