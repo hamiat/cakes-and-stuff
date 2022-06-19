@@ -1,0 +1,59 @@
+@import "../../styles/main.module.scss";
+
+footer {
+  padding: $sp-xxl ;
+  display: flex;
+  flex-direction: column;
+  gap: $mn;
+  background: $secondary;
+  color: $primary;
+
+  a {
+    color: $links;
+  }
+ 
+  .footerText{
+    @include treatsText;
+  }
+
+  .footerInfo {
+    display: flex;
+    justify-content: space-between;
+
+   
+   
+    .newsLetter, .visitUs, .footerLinks {
+      display: flex;
+      flex-direction: column;
+      gap: $sp-s;
+    }
+
+    .newsLetter {
+      form {
+        max-width: 22em;
+
+        input {
+          width: 100%;
+          border:none;
+          background: none;
+          border-bottom: 2px solid $primary;
+        }
+  
+        button {
+          @include buttons;
+          padding: $sp-xxs $sp-m;
+          color: $secondary;
+          margin: $sp-s 0;
+          
+        
+        }
+      }
+      
+
+    }
+
+
+    
+  }
+  
+}

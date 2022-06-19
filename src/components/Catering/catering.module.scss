@@ -1,7 +1,6 @@
 @import "../../styles/main.module.scss";
 
 .catering {
-  
   padding: $mn 0;
   display: flex;
   flex-direction: column;
@@ -12,9 +11,48 @@
     @include sectionTitle;
   }
 
-  .heroText {
-    @include heroText;
-    padding-top: $sp-m;
-   
+  p {
+    @include cateringText;
+    padding: $sp-s 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 32em;
+    width: 85%;
+
+    span {
+      padding: $sp-xs 0;
+      label {
+        @include labelText;
+        padding: $sp-m 0;
+      }
+
+      input,
+      textarea {
+        @include inputText;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: $sp-xxs;
+        border: 1px solid $secondary;
+      }
+      input {
+        padding: 0.2em 0.3em;
+      }
+      textarea {
+        height: 10em;
+        padding: 0.5em 0.5em;
+      }
+    }
+    .cateringBtn {
+      @include buttons;
+      background: $secondary;
+      width: 120px;
+      height: 45px;
+      place-self: center;
+      font-size: 16px;
+      margin: $sp-xs 0;
+    }
   }
 }

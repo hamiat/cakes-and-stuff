@@ -7,24 +7,23 @@ export default function Catering() {
   const [data, setData] = useState("");
 
   const handleInputData = (e) => {
-    console.log(JSON.stringify(data))
-    
-  }
+    console.log(JSON.stringify(data));
+  };
 
   return (
     <section className={style.catering}>
       <h2 className={style.sectionTitle}>Catering</h2>
       <p>(we'll get back to you as soon as possible!)</p>
       <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
-        <label>
-          Email
-        <input {...register("email")} placeholder="Email" />
-        </label>
-        <label>
-          Message
-        <textarea {...register("message")} placeholder="Message" />
-        </label>
-        <input type="submit" />
+        <span>
+          <label>Email:</label>
+          <input {...register("email")} />
+        </span>
+        <span>
+          <label>Message:</label>
+          <textarea {...register("message")} />
+        </span>
+        <input className={style.cateringBtn} type="submit" value="Send" />
       </form>
     </section>
   );

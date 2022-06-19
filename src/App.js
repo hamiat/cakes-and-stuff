@@ -1,4 +1,5 @@
 import Catering from "./components/Catering/Catering";
+import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Treat from "./components/Treats/Treats";
@@ -13,6 +14,7 @@ export default function App() {
       <Hero />
       <Treat />
       <Catering />
+      <Footer />
     </div>
   );
 }
