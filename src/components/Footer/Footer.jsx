@@ -10,14 +10,15 @@ export default function Footer() {
       </p>
       <div className={style.footerInfo}>
         <div className={style.newsLetter}>
-          <h3>Don't miss out on new treats!</h3>
-          
+          <h3 className={style.h3Titles}>Don't miss out on new treats!</h3>
           <form>
-            
-              <label for="email">Enter your email to sign up for our newsletter:</label>
-              <input type="email" name="email" />
-           
-            <button className={style.newsBtn} type="submit">Send</button>
+            <label for="email">
+              Enter your email to sign up for our newsletter:
+            </label>
+            <input type="email" name="email" />
+            <button className={style.newsBtn} type="submit">
+              Send
+            </button>
           </form>
         </div>
         <div className={style.visitUs}>
