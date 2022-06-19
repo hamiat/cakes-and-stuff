@@ -1,7 +1,7 @@
 @import "../../styles/main.module.scss";
 
 footer {
-  padding: $sp-xxl ;
+  padding: $sp-xl  ;
   display: flex;
   flex-direction: column;
   gap: $mn;
@@ -13,6 +13,10 @@ footer {
     color: $links;
   }
  
+  .footerText {
+    font-size: 20px;
+    line-height: 1.9;
+  }
 
   .footerInfo {
     display: flex;
@@ -65,6 +69,9 @@ footer {
 
 
     
+  }
+  .copyRight {
+    text-align: center;
   }
   
 }

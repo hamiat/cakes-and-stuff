@@ -1,6 +1,10 @@
 import style from "./footer.module.scss";
 
 export default function Footer() {
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  }
+
   return (
     <footer>
       <p className={style.footerText}>
@@ -10,9 +14,9 @@ export default function Footer() {
       </p>
       <div className={style.footerInfo}>
         <div className={style.newsLetter}>
-          <h3 className={style.h3Titles}>Don't miss out on new treats!</h3>
+          <h3>Don't miss out on new treats!</h3>
           <form>
-            <label for="email">
+            <label htmlFor="email">
               Enter your email to sign up for our newsletter:
             </label>
             <input type="email" name="email" />
@@ -40,6 +44,7 @@ export default function Footer() {
           <a href="/">Privacy</a>
         </div>
       </div>
+      <small className={style.copyRight}>&copy; Copyright {getCurrentYear()}, Cakesandstuffisnotarealcompany</small> 
     </footer>
   );
 }
