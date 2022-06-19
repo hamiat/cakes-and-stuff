@@ -23,7 +23,7 @@ export default function CartBtns() {
       </div>}
       {itemAdded && <div className={style.cartBtns}>
         <button onClick={handleDecrease}>-</button>
-        <p>{count}</p>
+        <p><span className={style.count}>{count}</span></p>
         <button onClick={handleIncrease}>+</button>
       </div>}
     </>

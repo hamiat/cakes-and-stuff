@@ -1,7 +1,7 @@
 @import "../../styles/main.module.scss";
 
 .treats {
- padding: $mn 0;
+ padding: $mn ;
  
 
   .treat {
@@ -26,12 +26,13 @@
         place-items: center;
         gap: $sp-l;
         justify-content: space-evenly;
-        width: 30%;
+        
 
         .treatText {
-         
           @include treatsText;
           padding-top: $sp-l;
+          width: 75%;
+          color: $secondary;
         }
 
 
