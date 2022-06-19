@@ -44,7 +44,7 @@ export default function Footer() {
           <a href="/">Privacy</a>
         </div>
       </div>
-      <small className={style.copyRight}>&copy; Copyright {getCurrentYear()}, Cakesandstuffisnotarealcompany</small> 
+      <small className={style.copyRight}>&copy; Copyright {getCurrentYear()}, CakesAndStuffIsNotARealCompany</small> 
     </footer>
   );
 }

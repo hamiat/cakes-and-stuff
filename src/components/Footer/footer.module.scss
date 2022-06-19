@@ -1,6 +1,7 @@
 @import "../../styles/main.module.scss";
 
 footer {
+  
   padding: $sp-xl  ;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@ footer {
   color: $primary;
   @include footerText;
 
+
   a {
     color: $links;
   }
@@ -16,11 +18,17 @@ footer {
   .footerText {
     font-size: 20px;
     line-height: 1.9;
+    width:80%;
+    margin: 0 auto;
+
   }
 
   .footerInfo {
     display: flex;
     justify-content: space-between;
+   width:80%;
+   place-self: center;
+
 
     h3 {
    @include h3Title;
@@ -71,7 +79,8 @@ footer {
     
   }
   .copyRight {
-    text-align: center;
+    margin: 0 auto;
+    width: max-content;
   }
   
 }
