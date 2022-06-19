@@ -10,30 +10,21 @@ header {
   right: 0;
   box-shadow: 1px 1px 1px rgb(114, 86, 86);
 
-
-  
-
-
   .navBar {
     display: flex;
-      padding: $sp-s $mn;
-      @include navText;
-  
+    padding: $sp-s $mn;
+    @include navText;
+
     .navList {
-        width: 90%;
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        padding: 0 $mn;
+      width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      padding: 0 $mn;
     }
-  
+
     .cart {
-        width: 10%;
+      width: 10%;
     }
-  
   }
-  
-
 }
-
-

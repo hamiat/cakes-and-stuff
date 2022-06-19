@@ -3,7 +3,7 @@ import style from "./footer.module.scss";
 export default function Footer() {
   const getCurrentYear = () => {
     return new Date().getFullYear();
-  }
+  };
 
   return (
     <footer>
@@ -44,7 +44,9 @@ export default function Footer() {
           <a href="/">Privacy</a>
         </div>
       </div>
-      <small className={style.copyRight}>&copy; Copyright {getCurrentYear()}, CakesAndStuffIsNotARealCompany</small> 
+      <small className={style.copyRight}>
+        &copy; Copyright {getCurrentYear()}, CakesAndStuffIsNotARealCompany
+      </small>
     </footer>
   );
 }

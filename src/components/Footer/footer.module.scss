@@ -1,8 +1,7 @@
 @import "../../styles/main.module.scss";
 
 footer {
-  
-  padding: $sp-xl 0 $sp-l  ;
+  padding: $sp-xl 0 $sp-l;
   display: flex;
   flex-direction: column;
   gap: $mn;
@@ -10,36 +9,34 @@ footer {
   color: $primary;
   @include footerText;
 
-
   a {
     color: $links;
     cursor: pointer;
   }
- 
+
   .footerText {
     font-size: 20px;
     line-height: 1.9;
-    width:80%;
+    width: 80%;
     margin: 0 auto;
-
   }
 
   .footerInfo {
     display: flex;
     justify-content: space-between;
-   width:80%;
-   place-self: center;
-
+    width: 80%;
+    place-self: center;
 
     h3 {
-   @include h3Title;
+      @include h3Title;
     }
-   
-    .newsLetter, .visitUs, .footerLinks {
+
+    .newsLetter,
+    .visitUs,
+    .footerLinks {
       display: flex;
       flex-direction: column;
       gap: $sp-m;
-      
     }
 
     .newsLetter {
@@ -47,7 +44,7 @@ footer {
         max-width: 22em;
         input {
           width: 100%;
-          border:none;
+          border: none;
           background: none;
           border-bottom: 2px solid $primary;
           margin-top: $sp-s;
@@ -55,13 +52,12 @@ footer {
           font-size: 16px;
           padding: 0.2em 0.1em;
           &:focus {
-            border:  1px solid $primary;
+            border: 1px solid $primary;
             outline: none;
-            border-radius: 5px
+            border-radius: 5px;
           }
-          
         }
-  
+
         button {
           @include buttons;
           padding: $sp-xxs $sp-m;
@@ -69,19 +65,12 @@ footer {
           margin: $sp-m 0;
           float: right;
           cursor: pointer;
-        
         }
       }
-      
-
     }
-
-
-    
   }
   .copyRight {
     margin: 0 auto;
     width: max-content;
   }
-  
 }

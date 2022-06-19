@@ -2,7 +2,6 @@ import style from "./navbar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
-
 export default function Navbar() {
   return (
     <header>
@@ -22,7 +21,9 @@ export default function Navbar() {
           </li>
         </ul>
         <div className={style.cart}>
-          <a href="/">Shop  <FontAwesomeIcon icon={faCartShopping}/></a>
+          <a href="/">
+            Shop <FontAwesomeIcon icon={faCartShopping} />
+          </a>
         </div>
       </nav>
     </header>

@@ -18,14 +18,20 @@ export default function CartBtns() {
 
   return (
     <>
-      {!itemAdded && <div onClick={() => setItemAdded(true)} className={style.cartBtns}>
-        <p >Add to cart</p>
-      </div>}
-      {itemAdded && <div className={style.cartBtns}>
-        <button onClick={handleDecrease}>-</button>
-        <p><span className={style.count}>{count}</span></p>
-        <button onClick={handleIncrease}>+</button>
-      </div>}
+      {!itemAdded && (
+        <div onClick={() => setItemAdded(true)} className={style.cartBtns}>
+          <p>Add to cart</p>
+        </div>
+      )}
+      {itemAdded && (
+        <div className={style.cartBtns}>
+          <button onClick={handleDecrease}>-</button>
+          <p>
+            <span className={style.count}>{count}</span>
+          </p>
+          <button onClick={handleIncrease}>+</button>
+        </div>
+      )}
     </>
   );
 }

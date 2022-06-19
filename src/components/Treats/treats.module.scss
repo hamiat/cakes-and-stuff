@@ -1,8 +1,7 @@
 @import "../../styles/main.module.scss";
 
 .treats {
- padding: $mn ;
- 
+  padding: $mn;
 
   .treat {
     padding: $mn;
@@ -11,7 +10,7 @@
     .sectionTitle {
       @include sectionTitle;
       text-align: center;
-      padding-bottom: $sp-xl ;
+      padding-bottom: $sp-xl;
     }
 
     .treatList {
@@ -26,16 +25,12 @@
         place-items: center;
         gap: $sp-l;
         justify-content: space-evenly;
-        
+        width: 250px;
 
         .treatText {
           @include treatsText;
-          padding-top: $sp-l;
-          width: 75%;
-          color: $secondary;
+          color: $dark;
         }
-
-
       }
 
       .addToCart {
@@ -49,9 +44,6 @@
           background-color: transparent;
         }
       }
-      
-     
     }
-
   }
 }

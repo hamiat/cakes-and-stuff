@@ -5,11 +5,9 @@
   border-radius: 10px;
   border: none;
   color: $primary;
-
-  
 }
 
-//Spacing 
+//Spacing
 
 @mixin containerSpacing {
   padding: $sp-xxl 0;
@@ -17,10 +15,9 @@
   gap: $mn;
 }
 
-
 //Typography in order of sections
 
-//Global 
+//Global
 
 @mixin h3Title {
   font-weight: 300;
@@ -31,7 +28,6 @@
 @mixin navText {
   font-size: 20px;
   font-weight: 300;
-
 }
 
 //Hero
@@ -46,26 +42,23 @@
   line-height: 1.5;
 }
 
-//Treat 
+//Treat
 @mixin sectionTitle {
   font-family: Rosarivo;
   font-size: 36px;
   color: $secondary;
- 
 }
 
 @mixin treatsText {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.7;
- 
-
 }
 
-//Counter 
+//Counter
 @mixin countText {
+  font-size: 16px;
   font-family: Rosarivo;
-  font-size: 18px;
 }
 
 //Catering
