@@ -1,2 +1,2 @@
-# cakes-shop
-Created with CodeSandbox
+# Cakes and stuff
+Created with React
