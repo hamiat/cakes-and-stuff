@@ -11,13 +11,13 @@ export default function Navbar() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/">Treats</a>
+            <a href="#treats">Treats</a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="#catering">Catering</a>
           </li>
         </ul>
         <div className={style.cart}>

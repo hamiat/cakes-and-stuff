@@ -71,7 +71,7 @@ export default function Treats() {
       {treatTemps.map((treatTemp) => (
         <section
           style={{ background: treatTemp.bgColor }}
-          className={style.treats}
+          className={style.treats} id="treats"
         >
           <Treat {...treatTemp} key={treatTemp.id} />
         </section>

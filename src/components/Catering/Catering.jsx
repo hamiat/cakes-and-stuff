@@ -11,7 +11,7 @@ export default function Catering() {
   };
 
   return (
-    <section className={style.catering}>
+    <section className={style.catering} id="catering">
       <h2 className={style.sectionTitle}>Catering</h2>
       <p>(we'll get back to you as soon as possible!)</p>
       <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>

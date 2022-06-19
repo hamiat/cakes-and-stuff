@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <p className={style.footerText}>
+      <p className={style.footerText} id="about">
         Our company values are based and shaped by our values as people. We only
         use ingredients that we would want use ourselves. Only the best for our
         customers, employees and the planet.
