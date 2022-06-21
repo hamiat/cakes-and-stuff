@@ -7,6 +7,10 @@
   justify-content: center;
   align-items: center;
 
+  @include lg {
+    padding: $sp-xl 0;
+  }
+
   .sectionTitle {
     @include sectionTitle;
   }
@@ -21,9 +25,18 @@
     flex-direction: column;
     max-width: 32em;
     width: 85%;
+    @include lg {
+      width: 40%;
+    }
+
 
     span {
       padding: $sp-xs 0;
+
+      @include lg {
+        padding: $sp-mini 0;
+      }
+
       label {
         @include labelText;
         padding: $sp-m 0;
@@ -43,6 +56,8 @@
       textarea {
         height: 10em;
         padding: 0.5em 0.5em;
+
+        
       }
     }
     .cateringBtn {
@@ -54,6 +69,11 @@
       font-size: 16px;
       margin: $sp-xs 0;
       cursor: pointer;
+
+      @include lg {
+        width: 100px;
+        height: 35px;
+      }
     }
   }
 }

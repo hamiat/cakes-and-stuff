@@ -1,9 +1,12 @@
+import { useState } from "react";
 import CartBtns from "../Cart/CartBtns";
 import style from "./treats.module.scss";
 
 export default function Treat({ title, picOne, picTwo, picThree }) {
+  const [teste, setTeste] = useState(window.outerWidth)
   return (
     <div className={style.treat}>
+      <p>{teste}</p>
       <h2 className={style.sectionTitle}>{title}</h2>
       <ul className={style.treatList}>
         <li>

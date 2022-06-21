@@ -9,6 +9,11 @@ footer {
   color: $primary;
   @include footerText;
 
+  @include lg {
+    padding: $sp-xl 0 $sp-s;
+    gap: $sp-l;
+  }
+
   a {
     color: $links;
     cursor: pointer;
@@ -19,6 +24,11 @@ footer {
     line-height: 1.9;
     width: 80%;
     margin: 0 auto;
+
+    @include lg {
+      font-size: 18px;
+      width: 85%;
+    }
   }
 
   .footerInfo {
@@ -27,17 +37,28 @@ footer {
     width: 80%;
     place-self: center;
 
-    h3 {
-      @include h3Title;
+    @include lg {
+      width: 85%;
     }
 
+    
     .newsLetter,
     .visitUs,
     .footerLinks {
       display: flex;
       flex-direction: column;
       gap: $sp-m;
+
+      @include lg {
+        gap: $sp-xs;
+        font-size: 14px;
+      }
     }
+
+    h3 {
+      @include h3Title;
+    }
+
 
     .newsLetter {
       form {
@@ -46,7 +67,7 @@ footer {
           width: 100%;
           border: none;
           background: none;
-          border-bottom: 2px solid $primary;
+          border-bottom: 1.5px solid $primary;
           margin-top: $sp-s;
           color: $primary;
           font-size: 16px;
@@ -65,6 +86,10 @@ footer {
           margin: $sp-m 0;
           float: right;
           cursor: pointer;
+          
+          @include lg {
+            padding: $sp-mini $sp-s;
+          }
         }
       }
     }
