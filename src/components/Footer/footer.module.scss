@@ -35,7 +35,10 @@ footer {
     }
     @include breakpoint(800px) {
       font-size: 16px;
+      width: 85%;
     }
+    
+    
   
   }
 
@@ -53,6 +56,13 @@ footer {
       width: 90%;
     }
 
+    @include sm {
+      flex-direction: column;
+      gap: $sp-m;
+      width: 85%;
+    }
+    
+
     
     .newsLetter,
     .visitUs,
@@ -64,6 +74,11 @@ footer {
       @include lg {
         gap: $sp-xs;
         font-size: 14px;
+      }
+
+      @include sm {
+        font-size: 16px;
+        gap: $sp-xxs;
       }
 
     
@@ -78,6 +93,9 @@ footer {
     .newsLetter {
       @include breakpoint(800px) {
         width: 35%;
+      }
+      @include sm {
+        width: 85%;
       }
       form {
         max-width: 22em;
@@ -115,5 +133,10 @@ footer {
   .copyRight {
     margin: 0 auto;
     width: max-content;
+
+    @include sm {
+      width: 85%;
+    text-align: center;
+    }
   }
 }

@@ -21,6 +21,10 @@
   p {
     @include cateringText;
     padding: $sp-s 0;
+
+    @include sm {
+      padding: $sp-xs 0;
+    }
   }
 
   form {
@@ -35,6 +39,12 @@
       width: 50%;
     }
 
+    @include sm {
+      width: 70%;
+      padding-top: $sp-s;
+    }
+
+
 
 
     span {
@@ -43,6 +53,7 @@
       @include lg {
         padding: $sp-mini 0;
       }
+     
 
       label {
         @include labelText;
@@ -80,6 +91,10 @@
       @include lg {
         width: 100px;
         height: 35px;
+      }
+
+      @include sm {
+        margin-top: $sp-m;
       }
     }
   }

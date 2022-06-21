@@ -35,6 +35,11 @@
         gap: $sp-m;
       }
 
+      @include sm {
+        flex-direction: column;
+        gap: $mn;
+      }
+
       li {
         display: flex;
         place-self: flex-start;
@@ -44,10 +49,19 @@
         justify-content: space-evenly;
         width: 250px;
 
+        @include sm {
+          margin: 0 auto;
+        }
+
         img {
           @include lg {
             width: 85%;
             place-self: flex-start;
+          }
+
+          @include sm {
+            width: 100%;
+            place-self: center;
           }
         }
 
