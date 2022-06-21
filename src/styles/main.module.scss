@@ -1,6 +1,6 @@
 @import "./abstracts/_variables.scss";
 @import "./abstracts/_mixins.scss";
-@import "./abstracts/_breakpoints.scss";
+@import "./abstracts/_breakpoints.modu.scss";
 
 * {
   padding: 0;
@@ -12,8 +12,6 @@ html {
   background: $primary;
   color: $dark;
   scroll-behavior: smooth;
-
-  
 }
 
 a {

@@ -44,16 +44,12 @@
       padding-top: $sp-s;
     }
 
-
-
-
     span {
       padding: $sp-xs 0;
 
       @include lg {
         padding: $sp-mini 0;
       }
-     
 
       label {
         @include labelText;
@@ -74,8 +70,6 @@
       textarea {
         height: 10em;
         padding: 0.5em 0.5em;
-
-        
       }
     }
     .cateringBtn {

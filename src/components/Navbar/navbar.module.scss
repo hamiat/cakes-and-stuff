@@ -16,7 +16,7 @@ header {
     @include navText;
 
     @include sm {
-      padding:  $sp-xs $sp-m;
+      padding: $sp-xs $sp-m;
     }
 
     .navList {
@@ -28,9 +28,8 @@ header {
       padding: 0 $mn;
 
       @include sm {
-        padding:  0 $sp-s;
+        padding: 0 $sp-s;
       }
-  
     }
 
     .cart {

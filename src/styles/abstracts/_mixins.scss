@@ -22,9 +22,6 @@
 @mixin h3Title {
   font-weight: 600;
   font-family: Roboto;
-
- 
-
 }
 
 //Nav
@@ -68,12 +65,11 @@
     font-size: 22px;
   }
   @include md {
-    font-size:20px;
+    font-size: 20px;
   }
   @include sm {
     font-size: 18px;
   }
-  
 }
 
 //Treat
@@ -86,13 +82,11 @@
     font-size: 32px;
   }
   @include md {
-    font-size:28px;
+    font-size: 28px;
   }
   @include sm {
-    font-size:30px;
+    font-size: 30px;
   }
-
-  
 }
 
 @mixin treatsText {
@@ -125,5 +119,4 @@
 //Footer
 @mixin footerText {
   font-family: Rosarivo;
-
 }
