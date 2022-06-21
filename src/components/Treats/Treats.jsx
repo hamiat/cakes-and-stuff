@@ -16,7 +16,7 @@ export default function Treats() {
       picTwo: {
         url: "/assets/pi-2.svg",
         description:
-          "Jujubes marshmallow oat cake sweet roll sugar plum cake muffin. Tootsie roll gummi bears tart candy canes muffin gummies.",
+          "Jujubes marshmallow oat cake sweet roll  cake muffin. Tootsie roll gummi bears tart candy canes muffin gummies.",
       },
       picThree: {
         url: "/assets/pi-3.svg",
@@ -36,7 +36,7 @@ export default function Treats() {
       picTwo: {
         url: "/assets/bu-2.svg",
         description:
-          "Dessert candy canes cotton candy biscuit cheesecake cheesecake tiramisu chocolate donut. ",
+          "Dessert candy canes cotton candy biscuit cheesecake icecream tiramisu chocolate donut. ",
       },
       picThree: {
         url: "/assets/bu-3.svg",
@@ -56,12 +56,12 @@ export default function Treats() {
       picTwo: {
         url: "/assets/gr-2.svg",
         description:
-          "Pie tart halvah dessert croissant muffin. Bonbon cookie jelly beans brownie sugar plum. ",
+          "Pie tart halvah dessert croissant muffin. Bonbon cookie brownie sugar plum. ",
       },
       picThree: {
         url: "/assets/gr-3.svg",
         description:
-          " Chocolate cake tiramisu pastry topping dessert cheesecake cookie cake bears muffin.  ",
+          " Chocolate cake tiramisu pastry cheesecake cookie cake bears muffin.  ",
       },
     },
   ]);

@@ -20,8 +20,9 @@
 //Global
 
 @mixin h3Title {
-  font-weight: 300;
+  font-weight: 600;
   font-family: Roboto;
+
 }
 
 //Nav
@@ -108,4 +109,5 @@
 //Footer
 @mixin footerText {
   font-family: Rosarivo;
+
 }

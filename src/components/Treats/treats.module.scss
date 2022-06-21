@@ -6,6 +6,9 @@
   @include md {
     padding: $sp-m;
   }
+  @include breakpoint(700px) {
+    padding: $sp-m $sp-xs;
+  }
 
   .treat {
     padding: $mn;
@@ -25,9 +28,16 @@
       @include lg {
         gap: $sp-xl;
       }
+      @include breakpoint(800px) {
+        gap: $sp-l;
+      }
+      @include breakpoint(700px) {
+        gap: $sp-m;
+      }
 
       li {
         display: flex;
+        place-self: flex-start;
         flex-direction: column;
         place-items: center;
         gap: $sp-l;
