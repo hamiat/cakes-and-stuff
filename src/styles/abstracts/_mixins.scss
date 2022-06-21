@@ -23,9 +23,7 @@
   font-weight: 600;
   font-family: Roboto;
 
-  @include sm {
-   
-  }
+ 
 
 }
 
@@ -54,6 +52,12 @@
   @include md {
     font-size: 52px;
   }
+  @include sm {
+    font-size: 46px;
+  }
+  @include breakpoint(400px) {
+    font-size: 38px;
+  }
 }
 @mixin heroText {
   font-size: 24px;
@@ -66,7 +70,10 @@
   @include md {
     font-size:20px;
   }
- 
+  @include sm {
+    font-size: 18px;
+  }
+  
 }
 
 //Treat
@@ -84,6 +91,7 @@
   @include sm {
     font-size:30px;
   }
+
   
 }
 
