@@ -28,6 +28,13 @@
 @mixin navText {
   font-size: 20px;
   font-weight: 300;
+
+  @include lg {
+    font-size: 18px;
+  }
+  @include md {
+    font-size: 18px;
+  }
 }
 
 //Hero
@@ -35,11 +42,25 @@
   font-family: Rosarivo;
   font-size: 64px;
   color: $secondary;
+
+  @include lg {
+    font-size: 58px;
+  }
+  @include md {
+    font-size: 52px;
+  }
 }
 @mixin heroText {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.5;
+
+  @include lg {
+    font-size: 22px;
+  }
+  @include md {
+    font-size:20px;
+  }
 }
 
 //Treat
@@ -47,6 +68,14 @@
   font-family: Rosarivo;
   font-size: 36px;
   color: $secondary;
+
+  @include lg {
+    font-size: 32px;
+  }
+  @include md {
+    font-size:28px;
+  }
+  
 }
 
 @mixin treatsText {

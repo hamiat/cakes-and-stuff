@@ -3,6 +3,10 @@
 .treats {
   padding: $mn;
 
+  @include md {
+    padding: $sp-m;
+  }
+
   .treat {
     padding: $mn;
     margin: 0 auto;
@@ -18,6 +22,9 @@
       justify-content: center;
       align-items: center;
       gap: $sp-xxl;
+      @include lg {
+        gap: $sp-xl;
+      }
 
       li {
         display: flex;

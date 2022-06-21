@@ -13,7 +13,7 @@ footer {
     padding: $sp-xl 0 $sp-s;
     gap: $sp-l;
   }
-
+ 
   a {
     color: $links;
     cursor: pointer;
@@ -29,6 +29,11 @@ footer {
       font-size: 18px;
       width: 85%;
     }
+
+    @include md {
+      width: 90%;
+    }
+  
   }
 
   .footerInfo {
@@ -39,6 +44,10 @@ footer {
 
     @include lg {
       width: 85%;
+    }
+
+    @include md {
+      width: 90%;
     }
 
     
@@ -53,6 +62,7 @@ footer {
         gap: $sp-xs;
         font-size: 14px;
       }
+
     }
 
     h3 {
