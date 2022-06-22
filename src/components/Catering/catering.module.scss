@@ -14,6 +14,11 @@
     padding: $sp-l 0;
   }
 
+  @include sm {
+    padding: 0;
+    height: 80vh;
+  }
+
   .sectionTitle {
     @include sectionTitle;
   }
@@ -41,7 +46,7 @@
 
     @include sm {
       width: 70%;
-      padding-top: $sp-s;
+      padding-top: $sp-m;
     }
 
     span {
@@ -49,6 +54,10 @@
 
       @include lg {
         padding: $sp-mini 0;
+      }
+
+      @include sm {
+        padding: $sp-xxs 0;
       }
 
       label {
@@ -88,7 +97,7 @@
       }
 
       @include sm {
-        margin-top: $sp-m;
+        margin-top: $sp-xl;
       }
     }
   }

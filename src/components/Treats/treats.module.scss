@@ -65,6 +65,16 @@
           }
         }
 
+        h4 {
+          place-self: flex-start;
+          margin-bottom: -$sp-s ;
+          width: 100%;
+
+          span {
+            float: right;
+          
+          }
+        }
         .treatText {
           @include treatsText;
           color: $dark;
