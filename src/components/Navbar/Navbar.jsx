@@ -14,14 +14,15 @@ export default function Navbar() {
 
   return (
     <header
+      className={expanded ? style.mobileHeader : style.header}
       style={
-        tabletAndSmaller
-          ? { background: "transparent", boxShadow: "none" }
-          : { background: "#814141" }
+        tabletAndSmaller && !expanded
+          ? { background: "transparent" }
+          : { background: "#814141", color: "#FAF7F3" }
       }
     >
-      {tabletAndSmaller && (
-        <nav className={style.hamMenu}>
+      <nav className={tabletAndSmaller ? style.navBarMobile : style.navBar}>
+        {tabletAndSmaller && (
           <button
             id="hamburger"
             aria-expanded={false}
@@ -31,13 +32,19 @@ export default function Navbar() {
             {expanded ? (
               <FontAwesomeIcon aria-hidden={true} icon={faXmark} />
             ) : (
-              <FontAwesomeIcon aria-hidden={true} icon={faBars} />
+              <FontAwesomeIcon
+                color="#814141"
+                aria-hidden={true}
+                icon={faBars}
+              />
             )}
           </button>
-        </nav>
-      )}
-      {!tabletAndSmaller && (
-        <nav className={style.navBar}>
+        )}
+
+        <div
+          className={style.desktopNav}
+          style={expanded ? { marginRight: 0 } : { marginRight: "-200vw" }}
+        >
           <ul className={style.navList}>
             <li>
               <a href="/">Home</a>
@@ -57,8 +64,8 @@ export default function Navbar() {
               Shop <FontAwesomeIcon icon={faCartShopping} />
             </a>
           </div>
-        </nav>
-      )}
+        </div>
+      </nav>
     </header>
   );
 }

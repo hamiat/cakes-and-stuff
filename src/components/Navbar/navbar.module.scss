@@ -1,6 +1,33 @@
 @import "../../styles/main.module.scss";
 
-header {
+button {
+  color: $primary;
+  border: none;
+  background-color: transparent;
+  font-size: 32px;
+  z-index: 5;
+  place-self: flex-end;
+  padding: 0 $sp-m;
+  margin-top: -300px;
+}
+
+.mobileHeader {
+  height: 100vh;
+  background: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  gap: $sp-m;
+  a {
+    color: $primary;
+  }
+}
+
+.header {
   height: max-content;
   background: $secondary;
   color: $primary;
@@ -10,7 +37,6 @@ header {
   right: 0;
   box-shadow: 1px 1px 1px rgb(114, 86, 86);
 
-
   a {
     text-decoration: none;
     color: $primary;
@@ -18,26 +44,15 @@ header {
     &:hover {
       color: $links;
     }
-   
   }
-  
-  .hamMenu {
-    padding: $sp-s $mn;
-    @include navText;
 
-    @include sm {
-      padding: $sp-xs $sp-m;
-    }
-
-    button {
-      border: none;
-      background-color: transparent;
-      font-size: 24px;
-      float: right;
-
-      
-    
-    }
+  .navBarMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
   }
 
   .navBar {
@@ -49,21 +64,26 @@ header {
       padding: $sp-xs $sp-m;
     }
 
-    .navList {
-      width: 90%;
+    .desktopNav {
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      list-style: none;
-      padding: 0 $mn;
+      width: 100%;
 
-      @include sm {
-        padding: 0 $sp-s;
+      .navList {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        padding: 0 $mn;
+
+        @include sm {
+          padding: 0 $sp-s;
+        }
       }
-    }
 
-    .cart {
-      width: 10%;
+      .cart {
+        width: 10%;
+      }
     }
   }
 }
