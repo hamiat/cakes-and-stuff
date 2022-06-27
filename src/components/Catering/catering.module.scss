@@ -6,6 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: max-content;
+  
 
   @include lg {
     padding: $sp-xl 0;
@@ -15,8 +17,8 @@
   }
 
   @include sm {
-    padding: 0;
-    height: 80vh;
+    padding: $sp-m 0;
+  
   }
 
   .sectionTitle {
@@ -90,6 +92,12 @@
       font-size: 16px;
       margin: $sp-xs 0;
       cursor: pointer;
+      &:hover {
+        color: $secondary;
+        background-color: transparent;
+        border: 1px solid $secondary;
+        box-shadow: 0px 3px 3px rgba(139, 93, 93, 0.25);
+      }
 
       @include lg {
         width: 100px;

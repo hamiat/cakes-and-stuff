@@ -14,6 +14,13 @@
   border-radius: 10px;
   padding: $sp-xxs $sp-xs;
   margin-top: $sp-s;
+  &:hover {
+    background-color: $secondary;
+  }
+
+  &:hover > * {
+    color: $primary; 
+  }
 
   @include md {
     width: 120px;
@@ -37,6 +44,6 @@
     background-color: transparent;
     font-size: 20px;
     cursor: pointer;
-    color: $secondary;
+    color: $secondary;  
   }
 }

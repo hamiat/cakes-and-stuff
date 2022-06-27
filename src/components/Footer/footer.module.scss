@@ -8,6 +8,7 @@ footer {
   background: $secondary;
   color: $primary;
   @include footerText;
+  
 
   @include lg {
     padding: $sp-xl 0 $sp-s;
@@ -17,6 +18,11 @@ footer {
   a {
     color: $links;
     cursor: pointer;
+    width: max-content;
+    &:hover {
+      border-bottom: 1px dotted #f8b124; ;
+      color: #f8b124; 
+    }
   }
 
   .footerText {
@@ -116,6 +122,12 @@ footer {
           margin: $sp-m 0;
           float: right;
           cursor: pointer;
+          &:hover {
+            color: $primary;
+            background-color: transparent;
+            border: 1px solid $primary;
+           
+          }
           
           @include lg {
             padding: $sp-mini $sp-s;
