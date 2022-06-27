@@ -1,23 +1,20 @@
 @import "../../styles/main.module.scss";
 
-button {
-  color: $primary;
+.hamBtn {
+  background: none;
   border: none;
-  background-color: transparent;
   font-size: 32px;
-  z-index: 5;
+  color: $secondary;
   place-self: flex-end;
-  padding: 0 $sp-m;
-  margin-top: -300px;
-
- 
-
-}
-span {
-  position: fixed;
-  margin-top: -180px;
-  margin-left: 80px;
- 
+  padding: $sp-m;
+  @include breakpoint(400px) {
+    padding: $sp-s;
+    font-size: 30px;
+  }
+  @include breakpoint(360px) {
+    padding: $sp-xxs;
+    font-size: 28px;
+  }
 }
 
 .mobileHeader {
@@ -31,9 +28,30 @@ span {
   left: 0;
   right: 0;
   gap: $sp-m;
-  width: 50vh;
+  width: 40vh;
+  font-size: 20px;
+  margin-left: auto;
+
+  @include breakpoint(400px) {
+    font-size: 18px;
+  }
   a {
     color: $primary;
+  }
+
+  .xMark {
+    position: fixed;
+    margin-top: -100px;
+    margin-left: 80px;
+    color: $primary;
+    font-size: 32px;
+  }
+
+  .navList {
+    display: flex;
+    gap: $sp-l;
+    flex-direction: column;
+    padding-bottom: $sp-l;
   }
 }
 
@@ -61,7 +79,6 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     z-index: 1;
   }
 

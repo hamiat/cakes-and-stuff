@@ -17,26 +17,27 @@ export default function Navbar() {
       className={expanded ? style.mobileHeader : style.header}
       style={
         tabletAndSmaller && !expanded
-          ? { background: "transparent" }
+          ? { background: "transparent", boxShadow: "none"}
           : { background: "#814141", color: "#FAF7F3" }
       }
     >
       <nav className={tabletAndSmaller ? style.navBarMobile : style.navBar}>
         {tabletAndSmaller && (
           <button
+          className={style.hamBtn}
             id="hamburger"
             aria-expanded={false}
             aria-label="Menu"
             onClick={() => setExpanded(!expanded)}
           >
             {expanded ? (
-              <span><FontAwesomeIcon aria-hidden={true} icon={faXmark} /></span>
+              <span className={style.xMark}><FontAwesomeIcon aria-hidden={true} icon={faXmark} /></span>
             ) : (
-              <FontAwesomeIcon
+              <span className={style.hamBars}> <FontAwesomeIcon
                 color="#814141"
                 aria-hidden={true}
                 icon={faBars}
-              />
+              /></span>
             )}
           </button>
         )}
