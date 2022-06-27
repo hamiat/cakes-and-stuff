@@ -30,7 +30,7 @@ export default function Navbar() {
             onClick={() => setExpanded(!expanded)}
           >
             {expanded ? (
-              <FontAwesomeIcon aria-hidden={true} icon={faXmark} />
+              <span><FontAwesomeIcon aria-hidden={true} icon={faXmark} /></span>
             ) : (
               <FontAwesomeIcon
                 color="#814141"

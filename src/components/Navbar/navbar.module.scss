@@ -9,6 +9,15 @@ button {
   place-self: flex-end;
   padding: 0 $sp-m;
   margin-top: -300px;
+
+ 
+
+}
+span {
+  position: fixed;
+  margin-top: -180px;
+  margin-left: 80px;
+ 
 }
 
 .mobileHeader {
@@ -22,6 +31,7 @@ button {
   left: 0;
   right: 0;
   gap: $sp-m;
+  width: 50vh;
   a {
     color: $primary;
   }
