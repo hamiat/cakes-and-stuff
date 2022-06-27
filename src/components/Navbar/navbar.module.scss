@@ -12,7 +12,7 @@
     font-size: 30px;
   }
   @include breakpoint(360px) {
-    padding: $sp-xxs;
+    padding: $sp-xs;
     font-size: 28px;
   }
 }
