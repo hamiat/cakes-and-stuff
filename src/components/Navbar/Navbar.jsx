@@ -1,12 +1,14 @@
 import style from "./navbar.module.scss";
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
+import { motion } from "framer-motion/dist/framer-motion";
+import { navItemVariants } from "../../utils/Animations";
 
 export default function Navbar() {
   const tabletAndSmaller = useMediaQuery({ query: "(max-width: 640px)" });
@@ -17,27 +19,32 @@ export default function Navbar() {
       className={expanded ? style.mobileHeader : style.header}
       style={
         tabletAndSmaller && !expanded
-          ? { background: "transparent", boxShadow: "none"}
+          ? { background: "transparent", boxShadow: "none" }
           : { background: "#814141", color: "#FAF7F3" }
       }
     >
       <nav className={tabletAndSmaller ? style.navBarMobile : style.navBar}>
         {tabletAndSmaller && (
           <button
-          className={style.hamBtn}
+            className={style.hamBtn}
             id="hamburger"
             aria-expanded={false}
             aria-label="Menu"
             onClick={() => setExpanded(!expanded)}
           >
             {expanded ? (
-              <span className={style.xMark}><FontAwesomeIcon aria-hidden={true} icon={faXmark} /></span>
+              <span className={style.xMark}>
+                <FontAwesomeIcon aria-hidden={true} icon={faXmark} />
+              </span>
             ) : (
-              <span className={style.hamBars}> <FontAwesomeIcon
-                color="#814141"
-                aria-hidden={true}
-                icon={faBars}
-              /></span>
+              <span className={style.hamBars}>
+                {" "}
+                <FontAwesomeIcon
+                  color="#814141"
+                  aria-hidden={true}
+                  icon={faBars}
+                />
+              </span>
             )}
           </button>
         )}
@@ -47,24 +54,28 @@ export default function Navbar() {
           style={expanded ? { marginRight: 0 } : { marginRight: "-200vw" }}
         >
           <ul className={style.navList}>
-            <li>
+            <motion.li variants={navItemVariants} whileHover="hover">
               <a href="/">Home</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={navItemVariants} whileHover="hover">
               <a href="#about">About</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={navItemVariants} whileHover="hover">
               <a href="#treats">Treats</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={navItemVariants} whileHover="hover">
               <a href="#catering">Catering</a>
-            </li>
+            </motion.li>
           </ul>
-          <div className={style.cart}>
+          <motion.div
+            variants={navItemVariants}
+            whileHover="hover"
+            className={style.cart}
+          >
             <a href="/">
               Shop <FontAwesomeIcon icon={faCartShopping} />
             </a>
-          </div>
+          </motion.div>
         </div>
       </nav>
     </header>

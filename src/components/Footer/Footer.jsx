@@ -1,4 +1,5 @@
 import style from "./footer.module.scss";
+import { motion } from "framer-motion/dist/framer-motion";
 
 export default function Footer() {
   const getCurrentYear = () => {
@@ -14,7 +15,13 @@ export default function Footer() {
       </p>
       <div className={style.footerInfo}>
         <div className={style.newsLetter}>
-          <h3>Don't miss out on new treats!</h3>
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.7 } }}
+            viewport={{ once: false, amount: 0.1 }}
+          >
+            Don't miss out on new treats!
+          </motion.h3>
           <form>
             <label htmlFor="email">
               Enter your email to sign up for our newsletter:
