@@ -1,6 +1,5 @@
 # Cakes and stuff 
-### Not an actual store, purely fictional!
-(created with React)
+A fictional online store created with React and Sass. The website is responsive and works on all devices. 
 
 #### Creative Commons Attributions:
 1) Photo by Heather Barnes on Unsplash
